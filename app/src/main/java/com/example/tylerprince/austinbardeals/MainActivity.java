@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         this.lastVisited = "onCreate()";
         Log.d(TAG, "Last Visited callback method  was " + this.lastVisited);
+        //trying to fix
     }
 
     @Override
