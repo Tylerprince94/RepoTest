@@ -42,28 +42,39 @@ public class DomainActivity extends AppCompatActivity implements View.OnClickLis
         bars = new ArrayList<>();
         details = new HashMap<>();
 
-        bars.add("Bar1");
-        bars.add("Bar2");
-
+        bars.add("77 Degrees");
         List<String> bar1 = new ArrayList<>();
-        List<String> bar2 = new ArrayList<>();
-
-        bar1.add("deal1");
-        bar1.add("deal2");
-        bar1.add("deal3");
-        bar1.add("deal4");
-        bar1.add("deal5");
-        bar1.add("address link placeholder");
-
-        bar2.add("deal1");
-        bar2.add("deal2");
-        bar2.add("deal3");
-        bar2.add("deal4");
-        bar2.add("deal5");
-        bar2.add("address link");
-
+        bar1.add("$5 Rail Liquor 3 pm - 7 pm");
+        bar1.add("$4 Mexican Beers 3 pm - 7 pm");
+        bar1.add("11500 Rock Rose Ave, Austin TX 78758");
         details.put(bars.get(0), bar1);
+
+        bars.add("Nosh & Bevvy");
+        List<String> bar2 = new ArrayList<>();
+        bar2.add("$2.50 PBR or Lone Star Tall Boys 3:30 pm - 7 pm");
+        bar2.add("$2.50 well drinks 3:30 pm - 7:30 pm");
+        bar2.add("$0.50 off all beers 3:30 pm - 7 pm");
+        bar2.add("8440 Burnet Road #100 Austin TX 78757");
         details.put(bars.get(1), bar2);
+
+        bars.add("Casa Chapala");
+        List<String> bar3 = new ArrayList<>();
+        bar3.add("$3 drop pints ");
+        bar3.add("$5 Mexican Martinis ");
+        bar3.add("$ 5.50 House Margaritas");
+        bar3.add("$6 Caguama Draft Beer");
+        bar3.add("$8 top shelf margarita");
+        bar3.add("9041 Research Blvd #100, Austin TX 78758");
+        details.put(bars.get(2), bar3);
+
+        bars.add("The Hideout Pub");
+        List<String> bar4 = new ArrayList<>();
+        bar4.add("$2.50 well drinks 3 pm - 7 pm");
+        bar4.add("$4.50 all draft beers 3 pm - 7 pm");
+        bar4.add("$2.50 Lone Star 3 pm - 7 pm");
+        bar4.add("address placeholder");
+        details.put(bars.get(3), bar4);
+
     }
 
     @Override
