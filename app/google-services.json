@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "548553644959",
+    "firebase_url": "https://happy-hour-deals-4e32b.firebaseio.com",
+    "project_id": "happy-hour-deals-4e32b",
+    "storage_bucket": "happy-hour-deals-4e32b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548553644959:android:30b945edbbf2ddd6",
+        "android_client_info": {
+          "package_name": "com.example.tylerprince.austinbardeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548553644959-nnl9r06a82qf60svsqa5u4pp8pu9fa6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tylerprince.austinbardeals",
+            "certificate_hash": "a29c9e9f907f4d840730cd4a81b6666508173282"
+          }
+        },
+        {
+          "client_id": "548553644959-nqd4jnsh0irmbg42k6meisota24r0vsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIeIYe4jvaurVSWH5p-EVgCKVPDbDAGNU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548553644959-nqd4jnsh0irmbg42k6meisota24r0vsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
