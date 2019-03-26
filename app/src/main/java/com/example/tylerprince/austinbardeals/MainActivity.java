@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         domainButtonLocal = (Button)findViewById(R.id.domain_button);
         domainButtonLocal.setOnClickListener(this);
 
+        System.out.println("TEST Print from Main");
+        
         this.lastVisited = "onCreate()";
         Log.d(TAG, "Last Visited callback method  was " + this.lastVisited);
     }

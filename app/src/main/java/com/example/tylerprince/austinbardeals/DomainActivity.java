@@ -35,6 +35,9 @@ public class DomainActivity extends AppCompatActivity implements View.OnClickLis
         listAdapter = new MyExpandableListAdapter(this, bars, details);
         expandableListView.setAdapter(listAdapter);
 
+        DatabaseHelper db = new DatabaseHelper();
+        db.getAllDeals();
+
     }
 
     public void fillData() {

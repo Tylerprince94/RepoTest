@@ -2,9 +2,9 @@ package com.example.tylerprince.austinbardeals;
 //testPush
 //test3
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+//import com.google.android.gms.ads.AdListener;
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.InterstitialAd;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class AdPop extends AppCompatActivity {
+    /*
     // Remove the below line after defining your own ad unit ID.
     private static final String TOAST_TEXT = "Test ads are being shown. "
             + "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
@@ -122,4 +123,5 @@ public class AdPop extends AppCompatActivity {
         mInterstitialAd = newInterstitialAd();
         loadInterstitial();
     }
+    */
 }
