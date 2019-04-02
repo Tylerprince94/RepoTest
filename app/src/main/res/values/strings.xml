@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">AustinBarDeals</string>
     <string name="title_activity_ad_pop">AdPop</string>
-    <string name="domain_landing_text">Domain Bar Dealssss</string>
+    <string name="allbars_landing_text">All Barssss</string>
+    <string name="filter_landing_text">Filtersssss</string>
 
 
     <string name="action_settings">Settings</string>

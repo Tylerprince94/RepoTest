@@ -1,9 +1,7 @@
 package com.example.tylerprince.austinbardeals;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
@@ -13,9 +11,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
-import android.content.Context;
 
-public class DomainActivity extends AppCompatActivity implements View.OnClickListener {
+public class AllBarsActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final String TAG = getClass().getSimpleName();
     private LinearLayout DomainBarList;
@@ -28,7 +25,7 @@ public class DomainActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_domain);
+        setContentView(R.layout.activity_allbars);
 
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
         fillData();

@@ -13,15 +13,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     static final String SAVED_STRING = "SAVED_STRING";
     String lastVisited;
 
-    private Button domainButtonLocal;
+    private Button allBarsButtonLocal;
+    private Button filterButtonLocal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        domainButtonLocal = (Button)findViewById(R.id.domain_button);
-        domainButtonLocal.setOnClickListener(this);
+        allBarsButtonLocal = (Button)findViewById(R.id.allbars_button);
+        allBarsButtonLocal.setOnClickListener(this);
+
+        filterButtonLocal = (Button)findViewById(R.id.filter_button);
+        filterButtonLocal.setOnClickListener(this);
 
         System.out.println("TEST Print from Main");
         
@@ -86,9 +90,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClick(View view){
         switch(view.getId()){
-            case R.id.domain_button:
-                Log.d(TAG, "Starting the Domain Activity");
-                startActivity(new Intent(this, DomainActivity.class));
+            case R.id.allbars_button:
+                Log.d(TAG, "Starting the All Bars Activity");
+                startActivity(new Intent(this, AllBarsActivity.class));
+                break;
+
+            case R.id.filter_button:
+                Log.d(TAG, "Starting the Filter Activity");
+                startActivity(new Intent(this, FilterActivity.class));
                 break;
 
             default:

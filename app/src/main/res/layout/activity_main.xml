@@ -25,11 +25,18 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/domain_button"
+                    android:id="@+id/allbars_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Domain" />
+                    android:text="All Bars" />
+
+                <Button
+                    android:id="@+id/filter_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Filter" />
 
             </LinearLayout>
     </LinearLayout>
