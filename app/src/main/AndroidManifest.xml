@@ -27,6 +27,10 @@
             android:name=".AllBarsActivity"></activity>
         <activity
             android:name=".FilterActivity"></activity>
+        <activity
+            android:name=".DealOfDayActivity"></activity>
+        <activity
+            android:name=".NearMeActivity"></activity>
         <!--<activity-->
             <!--android:name="com.google.android.gms.ads.AdActivity"-->
             <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->

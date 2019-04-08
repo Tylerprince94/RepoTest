@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button allBarsButtonLocal;
     private Button filterButtonLocal;
+    private Button dealOfDayButtonLocal;
+    private Button nearMeButtonLocal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         filterButtonLocal = (Button)findViewById(R.id.filter_button);
         filterButtonLocal.setOnClickListener(this);
+
+        dealOfDayButtonLocal = (Button)findViewById(R.id.dealofday_button);
+        dealOfDayButtonLocal.setOnClickListener(this);
+
+        nearMeButtonLocal = (Button)findViewById(R.id.nearme_button);
+        nearMeButtonLocal.setOnClickListener(this);
 
         System.out.println("TEST Print from Main");
         
@@ -98,6 +106,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.filter_button:
                 Log.d(TAG, "Starting the Filter Activity");
                 startActivity(new Intent(this, FilterActivity.class));
+                break;
+
+            case R.id.dealofday_button:
+                Log.d(TAG, "Starting the Deal Of The Day Activity");
+                startActivity(new Intent(this, DealOfDayActivity.class));
+                break;
+
+            case R.id.nearme_button:
+                Log.d(TAG, "Starting the Near Me Activity");
+                startActivity(new Intent(this, NearMeActivity.class));
                 break;
 
             default:

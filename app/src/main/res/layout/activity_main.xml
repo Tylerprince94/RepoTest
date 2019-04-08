@@ -38,6 +38,20 @@
                     android:layout_gravity="center_horizontal"
                     android:text="Filter" />
 
+                <Button
+                    android:id="@+id/dealofday_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Deal Of The Day" />
+
+                <Button
+                    android:id="@+id/nearme_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Near Me" />
+
             </LinearLayout>
     </LinearLayout>
 

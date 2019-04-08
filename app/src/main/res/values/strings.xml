@@ -3,6 +3,8 @@
     <string name="title_activity_ad_pop">AdPop</string>
     <string name="allbars_landing_text">All Barssss</string>
     <string name="filter_landing_text">Filtersssss</string>
+    <string name="dealofday_landing_text">Deal Of The Dayyyy</string>
+    <string name="nearme_landing_text">Near Meeee</string>
 
 
     <string name="action_settings">Settings</string>
