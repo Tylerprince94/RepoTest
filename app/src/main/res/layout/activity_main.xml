@@ -18,41 +18,41 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/allbars_button"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="All Bars" />
 
-                <Button
-                    android:id="@+id/allbars_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="All Bars" />
+            <Button
+                android:id="@+id/filter_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Filter" />
 
-                <Button
-                    android:id="@+id/filter_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Filter" />
+            <Button
+                android:id="@+id/dealofday_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Deal Of The Day" />
 
-                <Button
-                    android:id="@+id/dealofday_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Deal Of The Day" />
+            <Button
+                android:id="@+id/nearme_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Near Me" />
 
-                <Button
-                    android:id="@+id/nearme_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Near Me" />
-
-            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
