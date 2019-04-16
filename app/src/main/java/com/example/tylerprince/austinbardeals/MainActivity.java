@@ -3,9 +3,9 @@ package com.example.tylerprince.austinbardeals;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -13,26 +13,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     static final String SAVED_STRING = "SAVED_STRING";
     String lastVisited;
 
-    private Button allBarsButtonLocal;
-    private Button filterButtonLocal;
-    private Button dealOfDayButtonLocal;
-    private Button nearMeButtonLocal;
+    private CardView allBarsButtonLocal;
+    private CardView filterButtonLocal;
+    private CardView dealOfDayButtonLocal;
+    private CardView nearMeButtonLocal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_kat);
 
-        allBarsButtonLocal = (Button)findViewById(R.id.allbars_button);
+        allBarsButtonLocal = (CardView)findViewById(R.id.todaysdeals_button);
         allBarsButtonLocal.setOnClickListener(this);
 
-        filterButtonLocal = (Button)findViewById(R.id.filter_button);
+        filterButtonLocal = (CardView)findViewById(R.id.filter_button);
         filterButtonLocal.setOnClickListener(this);
 
-        dealOfDayButtonLocal = (Button)findViewById(R.id.dealofday_button);
+        dealOfDayButtonLocal = (CardView)findViewById(R.id.dealofday_button);
         dealOfDayButtonLocal.setOnClickListener(this);
 
-        nearMeButtonLocal = (Button)findViewById(R.id.nearme_button);
+        nearMeButtonLocal = (CardView)findViewById(R.id.nearme_button);
         nearMeButtonLocal.setOnClickListener(this);
 
         System.out.println("TEST Print from Main");
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClick(View view){
         switch(view.getId()){
-            case R.id.allbars_button:
+            case R.id.todaysdeals_button:
                 Log.d(TAG, "Starting the All Bars Activity");
                 startActivity(new Intent(this, AllBarsActivity.class));
                 break;
