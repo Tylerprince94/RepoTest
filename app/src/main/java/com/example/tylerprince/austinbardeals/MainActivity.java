@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_kat);
 
         allBarsButtonLocal = (Button)findViewById(R.id.allbars_button);
         allBarsButtonLocal.setOnClickListener(this);

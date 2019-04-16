@@ -17,10 +17,15 @@
 
         <TextView
             android:id="@+id/textGrid"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:layout_centerInParent="true"
+            android:background="@android:color/black"
+            android:alpha="0.65"
             android:text="City Specials"
+            android:textStyle="bold"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
     </RelativeLayout>
@@ -66,13 +71,13 @@
                     android:src="@drawable/near_meh" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Near Me"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -109,13 +114,13 @@
                     android:src="@drawable/clock_icon" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Today"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -153,13 +158,13 @@
                     android:src="@drawable/star_icon" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Deal of the Day!"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -196,13 +201,13 @@
                     android:src="@drawable/calendar_icon" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Plan Ahead"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
