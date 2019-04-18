@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/near_me_nav_bar"
-        android:icon="@drawable/near_meh"
-        android:title="Near Me"
+    <item android:id="@+id/finddeals_nav_bar"
+        android:icon="@drawable/cocktail_icon"
+        android:title="Find Deals"
         app:showAsAction="withText|always"/>
 
     <item android:id="@+id/dealofday_nav_bar"
-        android:icon="@drawable/star_icon"
+        android:icon="@drawable/star_outline_icon"
         android:title="Deal of the Day"
         app:showAsAction="withText|always"/>
 
@@ -16,8 +16,8 @@
         android:title="Today's Deals"
         app:showAsAction="withText|always"/>
 
-    <item android:id="@+id/planahead_nav_bar"
-        android:icon="@drawable/calendar_icon"
-        android:title="Plan Ahead"
+    <item android:id="@+id/favorites_nav_bar"
+        android:icon="@drawable/heart_icon"
+        android:title="Favorites"
         app:showAsAction="withText|always"/>
 </menu>
