@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/finddeals_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bar_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bar_image" />
+
+        <TextView
+            android:id="@+id/bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/bar_image"
+            android:layout_centerInParent="true"
+            android:text="Some Bar Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finddeals_detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finddeals_detail_header" >
+
+        <TextView
+            android:id="@+id/bar_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Description: \nSome description of a bar... Some description of a bar... Some description of a bar... Some description of a bar... Some description of a bar... Some description of a bar... \n"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/bar_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar_description"
+            android:text="Hours: \nMonday: 12:00pm - 2am \nTuesday: 12:00pm - 2am \nWednesday: 12:00pm - 2am \nThursday: 12:00pm - 2am \nFriday: 12:00pm - 2am \nSaturday: 12:00pm - 2am \nSunday: 12:00pm - 2am"
+            android:textSize="12sp" />
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar_hours" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TabWidget
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/tab_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/tab_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Monday's Deals"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tuesday's Deals"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_wednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wednesday's Deals"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thursday's Deals"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Friday's Deals"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Saturday's Deals"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sunday's Deals"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <!--<ScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/ivPosterImage"-->
+            <!--android:layout_marginTop="10dp" >-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical" >-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvCriticsConsensus"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="This is an excellent movie that has action and romance" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvSynopsis"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="This is a story about a protagonist defeating an antagonist" />-->
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvAudienceScore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/tvCriticsScore"-->
+            <!--android:layout_below="@+id/tvCriticsScore"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:text="Audience Score: 93%"-->
+            <!--android:textSize="14sp" />-->
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_bar_menu" />
+
+</RelativeLayout>
